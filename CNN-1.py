@@ -1,28 +1,38 @@
-from keras.datasets import mnist
-from keras.utils import to_categorical
-import matplotlib.pyplot as plt
-import sys
-
-(X_train, y_train), (X_test, y_test) = mnist.load_data()
-
-print(X_train.shape[0])
-print(X_test.shape[0])
-
-plt.imshow(X_train[0], cmap='Greys')
-plt.show()
-
-for x in X_train[0]:
-  for i in x:
-    sys.stdout.write("%-3s" % i)
-  sys.stdout.write('\n')
-
-X_train = X_train.reshape(X_train.shape[0], 784)
-X_train = X_train.astype('float64')
-X_train = X_train / 255
-
-print("class : %d " % (y_train[0]))
-
-y_train = to_categorical(y_train, 10)
-y_test = to_categorical(y_test, 10)
-
-print(y_train[0])
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3.10.5 64-bit",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.5"
+  },
+  "orig_nbformat": 4,
+  "vscode": {
+   "interpreter": {
+    "hash": "fb4569285eef3a3450cb62085a5b1e0da4bce0af555edc33dcf29baf3acc1368"
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
